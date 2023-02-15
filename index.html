@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Changa:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Changa", sans-serif;
+      }
+    </style>
+    <!--  -->
+  </head>
+  <body>
+    <!-- sign up -->
+    <div class="signup formTemplate" id="signup">
+      <div class="container">
+        <div class="wrapper">
+          <p class="alert">inputs required</p>
+          <h2>Sign Up</h2>
+          <form class="form" onsubmit="signupHandle()">
+            <input type="text" placeholder="Name:" class="name" />
+            <input type="email" placeholder="Email:" class="email" />
+            <input type="password" placeholder="Password:" class="pass" />
+            <button type="submit" class="signupBtn">Sign Up</button>
+          </form>
+          <p class="text">
+            Do you have an account? <a href="#" class="signinLink">Sign in</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- sign in -->
+    <div class="signin formTemplate" id="signin">
+      <div class="container">
+        <div class="wrapper">
+          <p class="alert">inputs required</p>
+          <h2>Sign In</h2>
+          <form class="form" onsubmit="signinHandle()">
+            <input type="email" placeholder="Email:" class="email" />
+            <input type="password" placeholder="Password:" class="pass" />
+            <button type="submit" class="signinBtn">Sign In</button>
+          </form>
+          <p class="text">
+            Don't have an account? <a href="#" class="signupLink">Sign up</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- home -->
+    <div class="home">
+      <div class="container">
+        <nav>
+          <h1 class="logo">Sign(in & up)</h1>
+          <button class="out">LogOut</button>
+        </nav>
+        <div class="welcome">
+          <h2>Welcome <span>bruh</span></h2>
+        </div>
+      </div>
+    </div>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
